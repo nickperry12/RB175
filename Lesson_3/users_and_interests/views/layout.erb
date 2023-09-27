@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Users and Interests</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href ="/stylesheets/stylesheet.css">
+  </head>
+  <body>
+    <%= yield %>
+    <footer>
+      <%= "There are #{@total_users} users and #{@total_interests} interests." %>
+    </footer>
+  </body>
+</html>

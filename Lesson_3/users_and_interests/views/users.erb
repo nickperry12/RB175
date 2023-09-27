@@ -1,0 +1,8 @@
+<h1>User Directory</h1>
+<ul>
+  <% @list_of_users.each do |user| %>
+  <li>
+    <a href="/users/<%= user.downcase %>"><%= user %></a>
+  </li>
+  <% end %>
+</ul>

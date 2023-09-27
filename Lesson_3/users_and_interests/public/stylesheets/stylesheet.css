@@ -1,0 +1,15 @@
+ul.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+li.footer-list-items {
+  display: inline-block;
+  padding: 0 2px;
+  margin: 0;
+}
+
+h4 {
+  margin-bottom: 5px;
+}

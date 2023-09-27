@@ -1,0 +1,23 @@
+<h2><%= @name.to_s.capitalize %></h2>
+<ul>
+  <h3>Email</h3>
+  <li>
+    <%= @user_email %>
+  </li>
+</ul>
+<ul>
+  <h3>Interests</h3>
+  <li>
+    <%= @user_interests %>
+  </li>
+</ul>
+<footer>
+  <h4>Check out the others!</h4>
+  <ul class="footer-list">
+    <% @non_current_users.each do |user| %>
+    <li class="footer-list-items">
+      <a href="/users/<%= user.downcase %>"><%= user %></a>
+    </li>
+    <% end %>
+  </ul>
+</footer>
